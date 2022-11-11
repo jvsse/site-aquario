@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo do Aquário</title>
+  <link rel="shortcut icon" href="HTML/Imagens HTML/Ícone Cálculo.png">
+  <link rel="stylesheet" href="CSS/Personalizações.css">
+  <script src="JavaScript/JavaScript.js"></script>
+</head>
+<body>
+    <div class="header">
+      <h1>Uma calculadora para seu Aquário</h1>
+      <p>Somos <b>exatamente</b> o que você procura!</p>
+    </div>
+    
+    <div class="navbar">
+      <a href="index.html" class="active">Ínicio</a>
+      <a href="Cálculo.html">Cálculo</a>
+      <a href="Informações.html">Informações sobre peixes</a>
+      <a href="Tipos de aquário.html" class="right">Tipos de aquário</a>
+    </div>
+    <h2>Calcule volume, peso total, sugestão para filtragem e voltagem de termóstatos.</h2>
+
+    <div class="calculo"> 
+        <label for="comprimento">Comprimento do aquário</label>
+        <input type="text" id="comprimento" name="comprimento" placeholder="Comprimento do aquário em centímetros...">
+    
+        <label for="altura">Altura do aquário</label>
+        <input type="text" id="altura" name="altura" placeholder="Altura do aquário em centímetros...">
+
+        <label for="largura">Largura do aquário</label>
+        <input type="text" id="largura" name="largura" placeholder="Largura do aquário em centímetros...">      
+      </form>
+
+    <button class="botao" type="button" onclick="calcular_l()">Calcular a litragem: </button>
+    <p class="resposta" id="resp_l">Resposta: </p>
+
+    <button class="botao" type="button" onclick="calcular_v()">Calcular o valor da bomba em litros por hora: </button>
+    <p class="resposta" id="resp_v">Resposta: </p>
+
+    <button class="botao" type="button" onclick="termostato()">Qual termostato usar: </button>
+    <p class="resposta" id="termostato">Resposta: </p>
+    </div>
+    </div>
+
+</body>
+</html>
